@@ -1,0 +1,296 @@
+:root{
+    background-color: #0B1D26;
+    --primary-color: #FFFFFF;
+    --accent-color: #FBD784;
+     --font-family: "Gilroy", sans-serif;
+--second-family: "DM Serif Display", sans-serif;
+font-size: 18px;
+font-weight: 700; 
+line-height: 1.7;
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+}
+/* #region default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding-left: 0;
+    color: var(--primary-color);
+   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    cursor: pointer;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex-grow: 1;
+}
+ul, ol , li {
+    text-decoration: none;
+    list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+
+}
+h2{
+    font-weight: 600;
+    font-size: 64px;
+    color:var(--primary-color);
+    font-family: var(--second-family);
+}
+.icon{
+    /* padding: 0; */
+  width:108px;
+  height:24px;
+  display:block; 
+   }
+
+/* for Mobile devices */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+/* for Tablet devices */
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .container{
+        max-width: 1440px;
+        padding: 0 80px;
+    }
+}
+                   /* header */
+.header-container{
+ padding-top: 64px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 198px;
+}
+.header-link{
+    display: flex;
+    gap: 40px;
+    font-family: "Gilroy", sans-serif;
+    color: var(--primary-color);
+
+}
+
+/* account */
+.account-cont{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.icon-account{
+    display: block;
+}
+.account-text{
+    font-family: var(--font-family);
+}
+
+
+                      /* hero */
+.main-title{
+        display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 950px;
+            margin: 0 auto;
+}
+.wrapper{
+    min-height: 100%;
+}
+.parallax{
+    min-height: 100vh;
+}
+.parallax_body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+}
+.parallax_container{
+   text-transform: uppercase; 
+   position: relative;
+   z-index: 2;
+}
+.parallax_label{
+    color: var(--accent-color);
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+    align-items: center ;
+    text-transform: uppercase;
+}
+.parallax_label::before {
+    flex: 0 0 70px; 
+    content: "";
+    margin: 0px 30px 0px 0px;
+    background-color: var(--accent-color);
+    height: 1px;
+   
+}
+.parallax_title{
+    max-width: 950px;
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 1.1;
+    font-family: --second-family;
+        text-transform: capitalize;
+
+}
+.parallax_images{
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top:-10%;
+    left:-10%;
+    z-index: 1;
+}
+.images-parallax_item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.images-parallax_clouds,
+.images-parallax_mountains,
+.images-parallax_human{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+}
+.images-parallax_clouds{
+    background: url(../images/hg.jpg) top / cover no-repeat;
+    top:0;
+}
+.images-parallax_mountains{
+    background: url(../images/MG.png) top / cover no-repeat;
+    top:15%;
+    z-index: 2;
+}
+ .images-parallax_human{
+    background: url(../images/VG.png) top / cover no-repeat;
+    top:45%;
+    z-index: 3;
+}  
+@media (max-aspect-ratio: 3/2){
+    .images-parallax_human{
+        background-position: 20% top;
+    }
+}
+.content_container{
+    position: relative;
+}
+.level__bg {
+    position: absolute;
+    top: -40px;
+    font-size: 240px;
+    line-height: 1;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+    color: #fff;
+}
+.content::before{
+    pointer-events: none;
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0px, -100%);
+    background: linear-gradient(180deg,
+        rgba(11, 29, 38, 0) 0%,
+        #0b1d26 72.28%);
+}
+.content{
+background-color: #0B1D26;;
+ position:relative;
+ z-index: 2;
+}
+.content_title {
+/* margin: 0px 0px 30px 0px; */
+font-weight: 600;
+font-size: 64px;
+font-family: var(--second-family)
+}
+.content_text {
+font-size: 18px;
+line-height: 1.7;
+}
+.more_info{
+    font-weight: 700;
+        font-size: 18px;
+        color: #fbd784;
+}
+.cont_more_info{
+display: inline-flex;
+    flex-direction: row;
+    /* на всякий, если где-то было column */
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+    /* чтобы "read more" не ломалось */
+    line-height: 1;
+}
+/* first foto */
+
+.get_started{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.link_svg{
+    fill:#916d1b;
+}
+.image{
+object-fit: cover;
+max-width: 566px;
+height: 720px;
+}

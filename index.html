@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MNTN</title>
     <!--jsdelivr-->
@@ -14,22 +13,65 @@
       href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://unpkg.com/modern-normalize/modern-normalize.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <nav class="scroll-indicator" aria-label="Page sections">
+      <a class="si-link is-active" href="#start">Start</a>
+      <a class="si-link" href="#s1">01</a>
+      <a class="si-link" href="#s2">02</a>
+      <a class="si-link" href="#s3">03</a>
+
+      <span class="si-line" aria-hidden="true">
+        <span class="si-progress"></span>
+      </span>
+    </nav>
+    <div class="follow-nav">
+      <span class="follow-text">Follow us</span>
+      <ul class="follow-list">
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.x.com/"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="wrapper">
-      <section class="parallax">
+      <section class="parallax" id="start">
         <div class="parallax_body">
           <div class="parallax_container container">
             <header class="header">
-              <div class="header-container">
+              <div class="header-container container-wide">
                 <a href="index.html" target="_blank">
                   <svg class="icon" width="108px" height="24px">
                     <use href="./images/icon.svg#icon-Logo"></use>
@@ -41,62 +83,130 @@
                   <li class="link"><a href="index.html">Blog</a></li>
                 </ul>
                 <div class="account-cont">
-                  <svg class="icon-account" width="24px" height="24px">
-                    <use href="./images/icon.svg#icon-cart"></use>
-                  </svg>
-                  <p class="account-text">Account</p>
+                  <a class="account-cont" href="index.html">
+                    <svg class="icon-account" width="24px" height="24px">
+                      <use href="./images/icon.svg#icon-cart"></use>
+                    </svg>
+                    <p class="account-text">Account</p>
+                  </a>
                 </div>
               </div>
             </header>
-            <main>
-<div class="main-title">
-
-  <div class="parallax_label">A Hiking guide</div>
-  <h1 class="parallax_title">
-    Be prepared for the <br />Mountains and beyond!
-  </h1>
-</div>
-</div>
-<div class="parallax_images images-parallax">
-  <div class="images-parallax_item">
-    <div class="images-parallax_clouds"></div>
-  </div>
-  <div class="images-parallax_item">
-    <div class="images-parallax_mountains"></div>
-  </div>
-  <div class="images-parallax_item">
-    <div class="images-parallax_human"></div>
-  </div>
-</div>
-</div>
-</section>
-      
-        <section class="content">
-          <div class="content_container container">
-            <div class="get_started">
-              <span class="level__bg">01</span>
-             <div class="parallax_label">Get Started</div>
-             <h2 class="content_title">What level of hiker are you?</h2>
-             <div class="content_text">
-               <p class="content_paragraph">
-                 Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? 
-               </p>
-               <div class="cont_more_info">
-               <a class="more_info" href="index.html">read more
-                <svg class="link_svg" width="24" height="16">
-                  <use href="./images/icon.svg#icon-strelka"></use>
-                </svg>
-               </a>
-               </div>
-               </div>
-<img class="image" src="./images/01@2x.jpg" alt="Mountains"/>
-            
-
+            <div class="main-title">
+              <div class="parallax_label">A Hiking guide</div>
+              <h1 class="parallax_title">
+                Be prepared for the <br />Mountains and beyond!
+              </h1>
             </div>
           </div>
-        </section>
-      </div>
-            </main>
-    <script type="module" src="./js/script.js"></script>
+          <div class="parallax_images images_parallax">
+            <div class="images_parallax_item">
+              <div class="images_parallax_clouds"></div>
+            </div>
+            <div class="images_parallax_item">
+              <div class="images_parallax_mountains"></div>
+            </div>
+            <div class="images_parallax_item">
+              <div class="images_parallax_human"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="content_container container">
+          <article class="content_row">
+            <div class="get_started">
+              <span class="level__bg">01</span>
+              <div class="parallax_label cont-span" id="s1">Get Started</div>
+              <h2 class="content_title">What level of hiker are you?</h2>
+              <div class="content_text">
+                <p class="content_paragraph">
+                  Determining what level of hiker you are can be an important
+                  tool when planning future hikes. This hiking level guide will
+                  help you plan hikes according to different hike ratings set by
+                  various websites like All Trails and Modern Hiker. What type
+                  of hiker are you – novice, moderate, advanced moderate,
+                  expert, or expert backpacker?
+                </p>
+                <div class="cont_more_info">
+                  <a class="more_info" href="index.html"
+                    >read more
+                    <svg class="link_svg" width="24" height="16">
+                      <use href="./images/icon.svg#icon-strelka"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content_right">
+              <img class="image" src="./images/01@2x.jpg" alt="Mountains" />
+            </div>
+          </article>
+          <!-- Cart 2 -->
+
+          <article class="content_row cart_two" id="s2">
+            <div class="content_right">
+              <img class="image" src="./images/01@2x-1.jpg" alt="Mountains" />
+            </div>
+            <div class="get_started">
+              <span class="level__bg span_two">02</span>
+              <div class="parallax_label cont-span">Hiking Essentials</div>
+              <h2 class="content_title">Picking the right Hiking Gear!</h2>
+              <div class="content_text">
+                <p class="content_paragraph">
+                  The nice thing about beginning hiking is that you don’t really
+                  need any special gear, you can probably get away with things
+                  you already have. Let’s start with clothing. A typical mistake
+                  hiking beginners make is wearing jeans and regular clothes,
+                  which will get heavy and chafe wif they get sweaty or wet.
+                </p>
+                <div class="cont_more_info">
+                  <a class="more_info" href="index.html"
+                    >read more
+                    <svg class="link_svg" width="24" height="16">
+                      <use href="./images/icon.svg#icon-strelka"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- cart 3 -->
+
+          <article class="content_row cart_three" id="s3">
+            <div class="get_started">
+              <span class="level__bg">03</span>
+              <div class="parallax_label cont-span">
+                where you go is the key
+              </div>
+              <h2 class="content_title">Understand Your Map & Timing</h2>
+              <div class="content_text">
+                <p class="content_paragraph">
+                  To start, print out the hiking guide and map. If it’s raining,
+                  throw them in a Zip-Lock bag. Read over the guide, study the
+                  map, and have a good idea of what to expect. I like to know
+                  what my next landmark is as I hike. For example, I’ll read the
+                  guide and know that say, in a mile, I make a right turn at the
+                  junction..
+                </p>
+                <div class="cont_more_info">
+                  <a class="more_info" href="index.html"
+                    >read more
+                    <svg class="link_svg" width="24" height="16">
+                      <use href="./images/icon.svg#icon-strelka"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content_right">
+              <img class="image" src="./images/01@2x-2.jpg" alt="Mountains" />
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

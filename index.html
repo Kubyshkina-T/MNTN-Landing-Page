@@ -27,6 +27,42 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          data-menu-close
+          aria-label="Close mobile menu"
+        >
+          <svg class="modal-btn-icon">
+            <use href="./images/icon.svg#icon-x"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a href="index.html">Equipment</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="index.html">About us</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="index.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-account-cont">
+          <a class="account-link" href="index.html">
+            <svg class="icon-account" width="24" height="24">
+              <use href="./images/icon.svg#icon-cart"></use>
+            </svg>
+            <span class="account-text">Account</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <nav class="scroll-indicator" aria-label="Page sections">
       <a class="si-link is-active" href="#start">Start</a>
       <a class="si-link" href="#s1">01</a>
@@ -84,14 +120,25 @@
                 </ul>
                 <div class="account-cont">
                   <a class="account-cont" href="index.html">
-                    <svg class="icon-account" width="24px" height="24px">
+                    <svg class="icon-account" width="24" height="24">
                       <use href="./images/icon.svg#icon-cart"></use>
                     </svg>
                     <p class="account-text">Account</p>
                   </a>
                 </div>
+                <button
+                  class="burger-btn"
+                  type="button"
+                  data-menu-open
+                  aria-label="Open mobile menu"
+                >
+                  <svg class="burger-icon" width="24px" height="24px">
+                    <use href="./images/icon.svg#icon-menu-icon"></use>
+                  </svg>
+                </button>
               </div>
             </header>
+
             <div class="main-title">
               <div class="parallax_label">A Hiking guide</div>
               <h1 class="parallax_title">

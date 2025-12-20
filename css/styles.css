@@ -301,6 +301,7 @@ a:hover {
     transform: translateX(0);
 }
 .mobile-menu-container {
+    max-width: 320px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -424,7 +425,7 @@ a:hover {
 /* ====SECTION CONTENT==== */
 .content {
     background-color: #0B1D26;
-    position: relative;
+ position: relative;
     z-index: 2;
 }
 

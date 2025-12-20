@@ -171,14 +171,24 @@ a:hover {
         font-size: 88px;
     }
 }
+ .parallax_images {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: 1;
+ }
+@media only screen and (min-width:768px){
+    .parallax_images {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        top: -10%;
+        left: -10%;
+        z-index: 1;
+    }
 
-.parallax_images {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    z-index: 1;
 }
 
 .images_parallax_item {

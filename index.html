@@ -27,6 +27,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="preloader">
+      <svg class="preloader-logo" width="120" height="40">
+        <use href="./images/icon.svg#icon-Logo"></use>
+      </svg>
+    </div>
     <div class="mobile-menu" data-menu>
       <div class="container mobile-menu-container">
         <button
@@ -78,6 +83,7 @@
       <ul class="follow-list">
         <li>
           <a
+            class="follow-link"
             href="https://www.instagram.com/"
             aria-label="Instagram"
             target="_blank"
@@ -90,6 +96,7 @@
         </li>
         <li>
           <a
+            class="follow-link"
             href="https://www.x.com/"
             aria-label="Twitter"
             target="_blank"
@@ -104,26 +111,28 @@
     </div>
     <div class="wrapper">
       <section class="parallax" id="start">
-        <div class="parallax_body">
-          <div class="parallax_container container">
+        <div class="parallax-body">
+          <div class="parallax-container container">
             <header class="header">
-              <div class="header-container container-wide">
-                <a href="index.html" target="_blank">
+              <div class="header-container">
+                <a class="icon-logo" href="index.html">
                   <svg class="icon" width="108px" height="24px">
                     <use href="./images/icon.svg#icon-Logo"></use>
                   </svg>
                 </a>
-                <ul class="header-link">
-                  <li class="link"><a href="index.html">Equipment</a></li>
-                  <li class="link"><a href="index.html">About us</a></li>
-                  <li class="link"><a href="index.html">Blog</a></li>
-                </ul>
-                <div class="account-cont">
-                  <a class="account-cont" href="index.html">
+                <nav class="header-nav" aria-label="Primary">
+                  <ul class="header-link">
+                    <li class="link"><a href="index.html">Equipment</a></li>
+                    <li class="link"><a href="index.html">About us</a></li>
+                    <li class="link"><a href="index.html">Blog</a></li>
+                  </ul>
+                </nav>
+                <div class="account">
+                  <a class="account-link" href="index.html">
                     <svg class="icon-account" width="24" height="24">
                       <use href="./images/icon.svg#icon-cart"></use>
                     </svg>
-                    <p class="account-text">Account</p>
+                    <span class="account-text">Account</span>
                   </a>
                 </div>
                 <button
@@ -140,34 +149,34 @@
             </header>
 
             <div class="main-title">
-              <div class="parallax_label">A Hiking guide</div>
-              <h1 class="parallax_title">
+              <div class="parallax-label">A Hiking guide</div>
+              <h1 class="parallax-title">
                 Be prepared for the <br />Mountains and beyond!
               </h1>
             </div>
           </div>
-          <div class="parallax_images images_parallax">
-            <div class="images_parallax_item">
-              <div class="images_parallax_clouds"></div>
+          <div class="parallax-images images-parallax">
+            <div class="images-parallax-item">
+              <div class="images-parallax-clouds"></div>
             </div>
-            <div class="images_parallax_item">
-              <div class="images_parallax_mountains"></div>
+            <div class="images-parallax-item">
+              <div class="images-parallax-mountains"></div>
             </div>
-            <div class="images_parallax_item">
-              <div class="images_parallax_human"></div>
+            <div class="images-parallax-item">
+              <div class="images-parallax-human"></div>
             </div>
           </div>
         </div>
       </section>
       <section class="content">
-        <div class="content_container container">
-          <article class="content_row">
-            <div class="get_started">
-              <span class="level__bg">01</span>
-              <div class="parallax_label cont-span" id="s1">Get Started</div>
-              <h2 class="content_title">What level of hiker are you?</h2>
-              <div class="content_text">
-                <p class="content_paragraph">
+        <div class="content-container container">
+          <article class="content-row" id="s1">
+            <div class="get-started">
+              <span class="level-bg">01</span>
+              <div class="parallax-label cont-span">Get Started</div>
+              <h2 class="content-title">What level of hiker are you?</h2>
+              <div class="content-text">
+                <p class="content-paragraph">
                   Determining what level of hiker you are can be an important
                   tool when planning future hikes. This hiking level guide will
                   help you plan hikes according to different hike ratings set by
@@ -175,8 +184,8 @@
                   of hiker are you – novice, moderate, advanced moderate,
                   expert, or expert backpacker?
                 </p>
-                <div class="cont_more_info">
-                  <a class="more_info" href="index.html"
+                <div class="cont-more-info">
+                  <a class="more-info" href="index.html"
                     >read more
                     <svg class="link_svg" width="24" height="16">
                       <use href="./images/icon.svg#icon-strelka"></use>
@@ -185,7 +194,7 @@
                 </div>
               </div>
             </div>
-            <div class="content_right">
+            <div class="content-right">
               <img
                 class="image"
                 src="./images/01.jpg"
@@ -198,8 +207,8 @@
           </article>
           <!-- Cart 2 -->
 
-          <article class="content_row cart_two" id="s2">
-            <div class="content_right">
+          <article class="content-row content-row--reverse" id="s2">
+            <div class="content-right">
               <img
                 class="image"
                 src="./images/01-2.jpg"
@@ -209,20 +218,20 @@
                 alt="Mountains"
               />
             </div>
-            <div class="get_started">
-              <span class="level__bg span_two">02</span>
-              <div class="parallax_label cont-span">Hiking Essentials</div>
-              <h2 class="content_title">Picking the right Hiking Gear!</h2>
-              <div class="content_text">
-                <p class="content_paragraph">
+            <div class="get-started">
+              <span class="level-bg span_two">02</span>
+              <div class="parallax-label cont-span">Hiking Essentials</div>
+              <h2 class="content-title">Picking the right Hiking Gear!</h2>
+              <div class="content-text">
+                <p class="content-paragraph">
                   The nice thing about beginning hiking is that you don’t really
                   need any special gear, you can probably get away with things
                   you already have. Let’s start with clothing. A typical mistake
                   hiking beginners make is wearing jeans and regular clothes,
-                  which will get heavy and chafe wif they get sweaty or wet.
+                  which will get heavy and chafe with they get sweaty or wet.
                 </p>
-                <div class="cont_more_info">
-                  <a class="more_info" href="index.html"
+                <div class="cont-more-info">
+                  <a class="more-info" href="index.html"
                     >read more
                     <svg class="link_svg" width="24" height="16">
                       <use href="./images/icon.svg#icon-strelka"></use>
@@ -235,24 +244,24 @@
 
           <!-- cart 3 -->
 
-          <article class="content_row cart_three" id="s3">
-            <div class="get_started">
-              <span class="level__bg">03</span>
-              <div class="parallax_label cont-span">
+          <article class="content-row" id="s3">
+            <div class="get-started">
+              <span class="level-bg">03</span>
+              <div class="parallax-label cont-span">
                 where you go is the key
               </div>
-              <h2 class="content_title">Understand Your Map & Timing</h2>
-              <div class="content_text">
-                <p class="content_paragraph">
+              <h2 class="content-title">Understand Your Map & Timing</h2>
+              <div class="content-text">
+                <p class="content-paragraph">
                   To start, print out the hiking guide and map. If it’s raining,
                   throw them in a Zip-Lock bag. Read over the guide, study the
                   map, and have a good idea of what to expect. I like to know
                   what my next landmark is as I hike. For example, I’ll read the
                   guide and know that say, in a mile, I make a right turn at the
-                  junction..
+                  junction.
                 </p>
-                <div class="cont_more_info">
-                  <a class="more_info" href="index.html"
+                <div class="cont-more-info">
+                  <a class="more-info" href="index.html"
                     >read more
                     <svg class="link_svg" width="24" height="16">
                       <use href="./images/icon.svg#icon-strelka"></use>
@@ -261,7 +270,7 @@
                 </div>
               </div>
             </div>
-            <div class="content_right">
+            <div class="content-right">
               <img
                 class="image"
                 src="./images/01-2.jpg"
@@ -275,10 +284,10 @@
         </div>
       </section>
       <footer class="footer">
-        <div class="footer-container content_container">
+        <div class="footer-container content-container">
           <div class="footer-left">
             <a class="footer-logo" href="index.html">
-              <svg class="icon" width="108" heigth="38">
+              <svg class="icon" width="108" height="38">
                 <use href="./images/icon.svg#icon-Logo"></use>
               </svg>
             </a>
@@ -287,7 +296,7 @@
             </p>
             <p class="footer-copy">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
           </div>
-          <div class="footer_right">
+          <div class="footer-right">
             <div class="footer-col">
               <p class="footer-title">More on The Blog</p>
               <ul class="footer-list">
